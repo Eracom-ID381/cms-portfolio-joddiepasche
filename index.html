@@ -1,87 +1,93 @@
-#<!doctype html>
+#
+<!doctype html>
 <html lang="fr" dir="ltr">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/perso_bt1.css">
 
-<link rel='icon' href='FAVICON/FAVICON_JGP.png' type='image/x-icon'/ >
+	<link rel='icon' href='FAVICON/FAVICON_JGP.png' type='image/x-icon' />
 
-    <title>JODDIE G. PASCHE</title>
+	<title>JODDIE G. PASCHE</title>
 	<style>
+		.containergal {
+			position: relative;
+			width: 100%;
+		}
 
-.containergal {
-  position: relative;
-  width: 100%;
-}
+		.image {
+			opacity: 1;
+			display: block;
+			width: 100%;
+			height: auto;
+			transition: .5s ease;
+			backface-visibility: hidden;
+		}
 
-.image {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
-}
+		.middle {
+			transition: .5s ease;
+			opacity: 0;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			text-align: center;
+		}
 
-.middle {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
+		.containergal:hover .image {
+			opacity: 0.3;
+		}
 
-.containergal:hover .image {
-  opacity: 0.3;
-}
+		.containergal:hover .middle {
+			opacity: 1;
+		}
 
-.containergal:hover .middle {
-  opacity: 1;
-}
+		.text {
+			background-color: #000;
+			color: white;
+			font-size: 16px;
+			padding: 16px 32px;
+		}
 
-.text {
-  background-color: #000;
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
-}
+		.card {
+			margin-bottom: 10px !important;
+		}
 
-.card {margin-bottom: 10px !important;}
+		.card-deck {
+			margin-bottom: 20px;
+		}
+	</style>
+</head>
 
-.card-deck {margin-bottom: 20px;}
-</style>
-  </head>
-  <body>
+<body>
 
 	<div class="container-fluid bg-black">
 		<div class="jumbotron bg-black">
 			<div class="container-fluid">
 				<div class="row">
-			  	  <div class="col-sm-8">
-		     <h1 class="display-1 text-white">JODDIE G. PASCHE</h1>
+					<div class="col-sm-8">
+						<h1 class="display-1 text-white">JODDIE G. PASCHE</h1>
 
 
-				     <p class="display-5 text-white imd">Interactive Media Designer</p>
-		 		  </div>
+						<p class="display-5 text-white imd">Interactive Media Designer</p>
+					</div>
 
-<!--NAV-->
-				<div class="col-sm-4">
-				<nav class="nav flex-column">
-				<a class="nav-link text-white nav-principal" href="02_ABOUTME.html">ABOUT ME</a>
-				<a class="nav-link text-white nav-principal" href="03_VIDEO.html">VIDEO</a>
-				<a class="nav-link text-white nav-principal" href="04_PHOTO.html">PHOTO</a>
-				<a class="nav-link text-white nav-principal" href="05_EVENTMEDIA.html">EVENT & MEDIA</a>
-				<a class="nav-link text-white nav-principal" href="06_OTHER.html">OTHER</a>
-				</nav>
-				</div>
+					<!--NAV-->
+					<div class="col-sm-4">
+						<nav class="nav flex-column">
+							<a class="nav-link text-white nav-principal" href="02_ABOUTME.html">ABOUT ME</a>
+							<a class="nav-link text-white nav-principal" href="categories/video/video.html">VIDEO</a>
+							<a class="nav-link text-white nav-principal" href="04_PHOTO.html">PHOTO</a>
+							<a class="nav-link text-white nav-principal" href="05_EVENTMEDIA.html">EVENT & MEDIA</a>
+							<a class="nav-link text-white nav-principal" href="06_OTHER.html">OTHER</a>
+						</nav>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -89,160 +95,173 @@
 
 	<div class="container-fluid">
 		<div class="card-deck">
-		  <div class="card">
-			  <div class="containergal">
-				  <img src="img/img_video_hellset.png" class="image card-img-top" alt="" style="width:100%">
-
-				  <div class="middle">
-					  <a href="projet_video_hellset.html">
-					<div class="text">HELL SET</div></a>
-				  </div>
-			</div>
-		  </div>
-
-		  <div class="card">
-			<div class="containergal">
-				<img src="img/img_photo_magieimg.png" class="image card-img-top" alt="" style="width:100%">
-
-				<div class="middle">
-					<a href="projet_photo_magieimage.html">
-				  <div class="text">MAGIE DE L'IMAGE</div></a>
-				</div>
-		  </div>
-		</div>
-
-		<div class="card">
-		 <div class="containergal">
-			<img src="img/img_video_darkcontrast.png" class="image card-img-top" alt="" style="width:100%">
-
-			<div class="middle">
-				<a href="projet_video_darkcontrast.html">
-			  <div class="text">DARK CONTRAST</div></a>
-			</div>
-		</div>
-	   </div>
-	   <div class="card">
-		<div class="containergal">
-		   <img src="img/img_video_baranka.png" class="image card-img-top" alt="" style="width:100%">
-
-		   <div class="middle">
-			   <a href="projet_video_baranka.html">
-			 <div class="text">BARANKA 2019 - AFTER MOVIE</div></a>
-		   </div>
-	   </div>
-	  </div>
-		<br>
-
-		<div class="container-fluid">
-			<div class="card-deck">
-				<div class="card">
-  				  <div class="containergal">
-  					 <img src="img/img_photo_ambiancenocturne.png" class="image card-img-top" alt="" style="width:100%">
-
-  					 <div class="middle">
-  						 <a href="projet_photo_ambiancenocturne.html">
-  					   <div class="text">AMBIANCE NOCTURNE</div></a>
-  					 </div>
-  				 </div>
-  				</div>
-
-				<div class="card">
-  				  <div class="containergal">
-  					  <img src="img/img_media_instaasvd.png" class="image card-img-top" alt="" style="width:100%">
-
-  					  <div class="middle">
-  						  <a href="projet_media_instaasvd.html">
-  						<div class="text">GESTION COMPTE -
-						@SCOUTS_VAUDOIS</div></a>
-  					  </div>
-  				</div>
-  			  </div>
-
-			  <div class="card">
+			<div class="card">
 				<div class="containergal">
-				   <img src="img/img_video_ciel.png" class="image card-img-top" alt="" style="width:100%">
+					<img src="img/img_video_hellset.png" class="image card-img-top" alt="" style="width:100%">
 
-				   <div class="middle">
-					   <a href="projet_video_ciel.html">
-					 <div class="text">CIEL - CONCOURS EPFL</div></a>
-				   </div>
-			   </div>
-			  </div>
-			  <div class="card">
-				 <div class="containergal">
-					 <img src="img/img_photo_traitpourtrait.png" class="image card-img-top" alt="" style="width:100%">
+					<div class="middle">
+						<a href="projet_video_hellset.html">
+							<div class="text">HELL SET</div>
+						</a>
+					</div>
+				</div>
+			</div>
 
-					 <div class="middle">
-						 <a href="projet_photo_traitpourtrait.html">
-					   <div class="text">TRAIT POUR TRAIT</div></a>
-					 </div>
-			   </div>
-			 </div>
-			  </div>
+			<div class="card">
+				<div class="containergal">
+					<img src="img/img_photo_magieimg.png" class="image card-img-top" alt="" style="width:100%">
+
+					<div class="middle">
+						<a href="projet_photo_magieimage.html">
+							<div class="text">MAGIE DE L'IMAGE</div>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="containergal">
+					<img src="img/img_video_darkcontrast.png" class="image card-img-top" alt="" style="width:100%">
+
+					<div class="middle">
+						<a href="projet_video_darkcontrast.html">
+							<div class="text">DARK CONTRAST</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="containergal">
+					<img src="img/img_video_baranka.png" class="image card-img-top" alt="" style="width:100%">
+
+					<div class="middle">
+						<a href="projet_video_baranka.html">
+							<div class="text">BARANKA 2019 - AFTER MOVIE</div>
+						</a>
+					</div>
+				</div>
 			</div>
 			<br>
 
 			<div class="container-fluid">
 				<div class="card-deck">
 					<div class="card">
-  	     			 <div class="containergal">
-  	     				<img src="img/img_gr_rictus.png" class="image card-img-top" alt="" style="width:100%">
+						<div class="containergal">
+							<img src="img/img_photo_ambiancenocturne.png" class="image card-img-top" alt="" style="width:100%">
 
-  	     				<div class="middle">
-  	     					<a href="projet_gr_rictus.html">
-  	     				  <div class="text">Rictus Impra - AFFICHE & FLYER</div></a>
-  	     				</div>
-  	     			</div>
-  	     		   </div>
-
-				   <div class="card">
- 					  <div class="containergal">
- 						  <img src="img/img_video_fevivalais.png" class="image card-img-top" alt="" style="width:100%">
-
- 						  <div class="middle">
- 							  <a href="projet_video_fevivalais.html">
- 							<div class="text">FÊTE DES VIGNERONS 2019 - [Valais] </div></a>
- 						  </div>
- 					</div>
- 				  </div>
-				  <div class="card">
-					<div class="containergal">
-					   <img src="img/img_video_moderat.png" class="image card-img-top" alt="" style="width:100%">
-
-					   <div class="middle">
-						   <a href="projet_video_moderat.html">
-						 <div class="text">MODERAT - ANIMATION</div></a>
-					   </div>
-				   </div>
-				  </div>
-				  <div class="card">
-					<div class="containergal">
-						<img src="img/img_video_vindicta.png" class="image card-img-top" alt="" style="width:100%">
-
-						<div class="middle">
-							<a href="projet_video_vindicta.html">
-						  <div class="text">VINDICTA</div></a>
+							<div class="middle">
+								<a href="projet_photo_ambiancenocturne.html">
+									<div class="text">AMBIANCE NOCTURNE</div>
+								</a>
+							</div>
 						</div>
-				  </div>
+					</div>
+
+					<div class="card">
+						<div class="containergal">
+							<img src="img/img_media_instaasvd.png" class="image card-img-top" alt="" style="width:100%">
+
+							<div class="middle">
+								<a href="projet_media_instaasvd.html">
+									<div class="text">GESTION COMPTE -
+										@SCOUTS_VAUDOIS</div>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="containergal">
+							<img src="img/img_video_ciel.png" class="image card-img-top" alt="" style="width:100%">
+
+							<div class="middle">
+								<a href="projet_video_ciel.html">
+									<div class="text">CIEL - CONCOURS EPFL</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="containergal">
+							<img src="img/img_photo_traitpourtrait.png" class="image card-img-top" alt="" style="width:100%">
+
+							<div class="middle">
+								<a href="projet_photo_traitpourtrait.html">
+									<div class="text">TRAIT POUR TRAIT</div>
+								</a>
+							</div>
+						</div>
+					</div>
 				</div>
-				  </div>
+			</div>
+			<br>
+
+			<div class="container-fluid">
+				<div class="card-deck">
+					<div class="card">
+						<div class="containergal">
+							<img src="img/img_gr_rictus.png" class="image card-img-top" alt="" style="width:100%">
+
+							<div class="middle">
+								<a href="projet_gr_rictus.html">
+									<div class="text">Rictus Impra - AFFICHE & FLYER</div>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="containergal">
+							<img src="img/img_video_fevivalais.png" class="image card-img-top" alt="" style="width:100%">
+
+							<div class="middle">
+								<a href="projet_video_fevivalais.html">
+									<div class="text">FÊTE DES VIGNERONS 2019 - [Valais] </div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="containergal">
+							<img src="img/img_video_moderat.png" class="image card-img-top" alt="" style="width:100%">
+
+							<div class="middle">
+								<a href="projet_video_moderat.html">
+									<div class="text">MODERAT - ANIMATION</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="containergal">
+							<img src="img/img_video_vindicta.png" class="image card-img-top" alt="" style="width:100%">
+
+							<div class="middle">
+								<a href="projet_video_vindicta.html">
+									<div class="text">VINDICTA</div>
+								</a>
+							</div>
+						</div>
+					</div>
 				</div>
+			</div>
 
-				<br>
+			<br>
 
 
-				<div class="container-fluid">
-					<div class="card-deck">
-					  <div class="card">
-		   			  <div class="containergal">
-		   				 <img src="img/img_photo_workshop.png" class="image card-img-top" alt="" style="width:100%">
+			<div class="container-fluid">
+				<div class="card-deck">
+					<div class="card">
+						<div class="containergal">
+							<img src="img/img_photo_workshop.png" class="image card-img-top" alt="" style="width:100%">
 
-		   				 <div class="middle">
-		   					 <a href="projet_photo_portraitworkshop.html">
-		   				   <div class="text">PORTRAIT STUDIO - WORKSHOP</div></a>
-		   				 </div>
-		   			 </div>
-		   			</div>
+							<div class="middle">
+								<a href="projet_photo_portraitworkshop.html">
+									<div class="text">PORTRAIT STUDIO - WORKSHOP</div>
+								</a>
+							</div>
+						</div>
+					</div>
 
 					<div class="card">
 						<div class="containergal">
@@ -250,233 +269,253 @@
 
 							<div class="middle">
 								<a href="projet_3d_fourchette.html">
-							  <div class="text">MODELISATION 3D - SERVICE</div></a>
+									<div class="text">MODELISATION 3D - SERVICE</div>
+								</a>
 							</div>
-					  </div>
+						</div>
 					</div>
 
 					<div class="card">
-				   	<div class="containergal">
-				   	   <img src="img/img_video_rictus.png" class="image card-img-top" alt="" style="width:100%">
+						<div class="containergal">
+							<img src="img/img_video_rictus.png" class="image card-img-top" alt="" style="width:100%">
 
-				   	   <div class="middle">
-				   		   <a href="projet_video_rictus.html">
-				   		 <div class="text">RICTUS IMPRA - TEASER</div></a>
-				   	   </div>
-				      </div>
-				     </div>
+							<div class="middle">
+								<a href="projet_video_rictus.html">
+									<div class="text">RICTUS IMPRA - TEASER</div>
+								</a>
+							</div>
+						</div>
+					</div>
 
 					<div class="card">
-					  <div class="containergal">
-						 <img src="img/img_gr_modulesecu.png" class="image card-img-top" alt="" style="width:100%">
+						<div class="containergal">
+							<img src="img/img_gr_modulesecu.png" class="image card-img-top" alt="" style="width:100%">
 
-						 <div class="middle">
-							 <a href="projet_gr_modulesecu.html">
-						   <div class="text">MODULE DOMAINE & SECURITE -
-						   ASVd</div></a>
-						 </div>
-					 </div>
+							<div class="middle">
+								<a href="projet_gr_modulesecu.html">
+									<div class="text">MODULE DOMAINE & SECURITE -
+										ASVd</div>
+								</a>
+							</div>
+						</div>
 					</div>
 
-					  </div>
-					</div>
+				</div>
+			</div>
 			<br>
 			<div class="container-fluid">
 				<div class="card-deck">
-				  <div class="card">
-		  		 <div class="containergal">
-		  			<img src="img/img_media_vibram.png" class="image card-img-top" alt="" style="width:100%">
-
-		  			<div class="middle">
-		  				<a href="projet_media_storyvibram.html">
-		  			  <div class="text">STORY INSTAGRAM - VIBRAM</div></a>
-		  			</div>
-		  		</div>
-		  	   </div>
-
-			   <div class="card">
-			  <div class="containergal">
-				 <img src="img/img_photo_portraitville.png" class="image card-img-top" alt="" style="width:100%">
-
-				 <div class="middle">
-					 <a href="projet_photo_portraitville.html">
-				   <div class="text">PORTRAIT DE VILLE</div></a>
-				 </div>
-			 </div>
-			</div>
-
-			<div class="card">
-			  <div class="containergal">
-				  <img src="img/img_gr_logojse.png" class="image card-img-top" alt="" style="width:100%">
-
-				  <div class="middle">
-					  <a href="projet_gr_logojse.html">
-					<div class="text">LOGO JSE -
-					ASVd</div></a>
-				  </div>
-			</div>
-		  </div>
-		  <div class="card">
-			 <div class="containergal">
-				<img src="img/img_video_fashionshow.png" class="image card-img-top" alt="" style="width:100%">
-
-				<div class="middle">
-					<a href="projet_video_fashionshow.html">
-				  <div class="text">FASHION SHOW</div></a>
-				</div>
-			</div>
-		   </div>
-				<br>
-
-				<div class="container-fluid">
-					<div class="card-deck">
-						<div class="card">
-				  		  <div class="containergal">
-				  			 <img src="img/img_media_instafevi.png" class="image card-img-top" alt="" style="width:100%">
-
-				  			 <div class="middle">
-				  				 <a href="projet_media_instafevi.html">
-				  			   <div class="text">PUBLICATION INSTAGRAM - FÊTE DES VIGNERONS 2019</div></a>
-				  			 </div>
-				  		 </div>
-				  		</div>
-
-						<div class="card">
-		  				  <div class="containergal">
-		  					 <img src="img/img_photo_photographoesie.png" class="image card-img-top" alt="" style="width:100%">
-
-		  					 <div class="middle">
-		  						 <a href="projet_photo_photographoesie.html">
-		  					   <div class="text">PHOTOGRAPHOESIE</div></a>
-		  					 </div>
-		  				 </div>
-		  				</div>
-
-						<div class="card">
-  		   			<div class="containergal">
-  		   			   <img src="img/img_3d_visage.png" class="image card-img-top" alt="" style="width:100%">
-
-  		   			   <div class="middle">
-  		   				   <a href="projet_3d_visage.html">
-  		   				 <div class="text">MODELISATION 3D - AUTOPORTRAIT </div></a>
-  		   			   </div>
-  		   		   </div>
-  		   		  </div>
-					  <div class="card">
-						  <div class="containergal">
-							  <img src="img/img_video_feviinterview.png" class="image card-img-top" alt="" style="width:100%">
-
-							  <div class="middle">
-								  <a href="projet_video_feviinterview.html">
-								<div class="text">FÊTE DES VIGNERONS 2019 [Interview]</div></a>
-							  </div>
-						</div>
-					  </div>
-					  </div>
-					</div>
-			<br>
-			<br>
-						<div class="container-fluid">
-							<div class="card-deck">
-								<div class="card">
-  		  					 <div class="containergal">
-  		  						<img src="img/img_video_interview.png" class="image card-img-top" alt="" style="width:100%">
-
-  		  						<div class="middle">
-  		  							<a href="projet_video_interview.html">
-  		  						  <div class="text">INTERVIEW - habilllage</div></a>
-  		  						</div>
-  		  					</div>
-  		  				   </div>
-
-						   <div class="card">
-						  <div class="containergal">
-							 <img src="img/img_video_palino.png" class="image card-img-top" alt="" style="width:100%">
-
-							 <div class="middle">
-								 <a href="projet_video_palino.html">
-							   <div class="text">PALINO - Plan Séquence</div></a>
-							 </div>
-						 </div>
-						</div>
-
-						  <div class="card">
-						  <div class="containergal">
-							 <img src="img/img_video_inconstance.png" class="image card-img-top" alt="" style="width:100%">
-
-							 <div class="middle">
-								 <a href="projet_video_inconstance.html">
-							   <div class="text">SCENE TOURNAGE - WORKSHOP</div></a>
-							 </div>
-						 </div>
-						</div>
-						<div class="card">
-						 <div class="containergal">
-							<img src="img/img_video_docks.png" class="image card-img-top" alt="" style="width:100%">
+					<div class="card">
+						<div class="containergal">
+							<img src="img/img_media_vibram.png" class="image card-img-top" alt="" style="width:100%">
 
 							<div class="middle">
-								<a href="projet_media_docks.html">
-							  <div class="text">STORIES - DOCKS</div></a>
+								<a href="projet_media_storyvibram.html">
+									<div class="text">STORY INSTAGRAM - VIBRAM</div>
+								</a>
 							</div>
 						</div>
-					   </div>
-
-					   <div class="container-fluid">
-				   		<div class="card-deck">
-				   			<div class="card">
-				   		 <div class="containergal">
-				   			<img src="img/img_video_spatule.png" class="image card-img-top" alt="" style="width:100%">
-
-				   			<div class="middle">
-				   				<a href="projet_video_spatule.html">
-				   			  <div class="text">LA SPATULE</div></a>
-				   			</div>
-				   		</div>
-				   	   </div>
-
-				   	   <div class="card">
-				   	  <div class="containergal">
-				   		 <img src="img/img_video_nonentity.png" class="image card-img-top" alt="" style="width:100%">
-
-				   		 <div class="middle">
-				   			 <a href="projet_video_nonentity.html">
-				   		  <div class="text">NONENTITY</div></a>
-				   		 </div>
-				   	 </div>
-				   	</div>
+					</div>
 
 					<div class="card">
-				   <div class="containergal">
-					  <img src="img/img_white.png" class="image card-img-top" alt="" style="width:100%">
+						<div class="containergal">
+							<img src="img/img_photo_portraitville.png" class="image card-img-top" alt="" style="width:100%">
 
-					  <div class="middle">
-						  <a href="projet_x_x.html">
-						<div class="text">x</div></a>
-					  </div>
-				   	 </div>
-				   	</div>
+							<div class="middle">
+								<a href="projet_photo_portraitville.html">
+									<div class="text">PORTRAIT DE VILLE</div>
+								</a>
+							</div>
+						</div>
+					</div>
 
-				   	<div class="card">
-				   	 <div class="containergal">
-				   		<img src="img/img_white.png" class="image card-img-top" alt="" style="width:100%">
+					<div class="card">
+						<div class="containergal">
+							<img src="img/img_gr_logojse.png" class="image card-img-top" alt="" style="width:100%">
 
-				   		<div class="middle">
-				   			<a href="projet_x_x.html">
-				   		  <div class="text">x</div></a>
-				   		</div>
-				   	</div>
-				      </div>
-	<footer class="footer mt-auto py-3 bg-black">
-	  <div class="container">
-		<span class="text-muted">ⓒ Joddie Pasche 2020</span>
-	  </div>
-	</footer>
+							<div class="middle">
+								<a href="projet_gr_logojse.html">
+									<div class="text">LOGO JSE -
+										ASVd</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="containergal">
+							<img src="img/img_video_fashionshow.png" class="image card-img-top" alt="" style="width:100%">
+
+							<div class="middle">
+								<a href="projet_video_fashionshow.html">
+									<div class="text">FASHION SHOW</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<br>
+
+					<div class="container-fluid">
+						<div class="card-deck">
+							<div class="card">
+								<div class="containergal">
+									<img src="img/img_media_instafevi.png" class="image card-img-top" alt="" style="width:100%">
+
+									<div class="middle">
+										<a href="projet_media_instafevi.html">
+											<div class="text">PUBLICATION INSTAGRAM - FÊTE DES VIGNERONS 2019</div>
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="containergal">
+									<img src="img/img_photo_photographoesie.png" class="image card-img-top" alt="" style="width:100%">
+
+									<div class="middle">
+										<a href="projet_photo_photographoesie.html">
+											<div class="text">PHOTOGRAPHOESIE</div>
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="containergal">
+									<img src="img/img_3d_visage.png" class="image card-img-top" alt="" style="width:100%">
+
+									<div class="middle">
+										<a href="projet_3d_visage.html">
+											<div class="text">MODELISATION 3D - AUTOPORTRAIT </div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="containergal">
+									<img src="img/img_video_feviinterview.png" class="image card-img-top" alt="" style="width:100%">
+
+									<div class="middle">
+										<a href="projet_video_feviinterview.html">
+											<div class="text">FÊTE DES VIGNERONS 2019 [Interview]</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br>
+					<br>
+					<div class="container-fluid">
+						<div class="card-deck">
+							<div class="card">
+								<div class="containergal">
+									<img src="img/img_video_interview.png" class="image card-img-top" alt="" style="width:100%">
+
+									<div class="middle">
+										<a href="projet_video_interview.html">
+											<div class="text">INTERVIEW - habilllage</div>
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="containergal">
+									<img src="img/img_video_palino.png" class="image card-img-top" alt="" style="width:100%">
+
+									<div class="middle">
+										<a href="projet_video_palino.html">
+											<div class="text">PALINO - Plan Séquence</div>
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="containergal">
+									<img src="img/img_video_inconstance.png" class="image card-img-top" alt="" style="width:100%">
+
+									<div class="middle">
+										<a href="projet_video_inconstance.html">
+											<div class="text">SCENE TOURNAGE - WORKSHOP</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="containergal">
+									<img src="img/img_video_docks.png" class="image card-img-top" alt="" style="width:100%">
+
+									<div class="middle">
+										<a href="projet_media_docks.html">
+											<div class="text">STORIES - DOCKS</div>
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="container-fluid">
+								<div class="card-deck">
+									<div class="card">
+										<div class="containergal">
+											<img src="img/img_video_spatule.png" class="image card-img-top" alt="" style="width:100%">
+
+											<div class="middle">
+												<a href="projet_video_spatule.html">
+													<div class="text">LA SPATULE</div>
+												</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="card">
+										<div class="containergal">
+											<img src="img/img_video_nonentity.png" class="image card-img-top" alt="" style="width:100%">
+
+											<div class="middle">
+												<a href="projet_video_nonentity.html">
+													<div class="text">NONENTITY</div>
+												</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="card">
+										<div class="containergal">
+											<img src="img/img_white.png" class="image card-img-top" alt="" style="width:100%">
+
+											<div class="middle">
+												<a href="projet_x_x.html">
+													<div class="text">x</div>
+												</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="card">
+										<div class="containergal">
+											<img src="img/img_white.png" class="image card-img-top" alt="" style="width:100%">
+
+											<div class="middle">
+												<a href="projet_x_x.html">
+													<div class="text">x</div>
+												</a>
+											</div>
+										</div>
+									</div>
+									<footer class="footer mt-auto py-3 bg-black">
+										<div class="container">
+											<span class="text-muted">ⓒ Joddie Pasche 2020</span>
+										</div>
+									</footer>
 
 
-	<!-- Optional JavaScript -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	</body>
-	</html>
+									<!-- Optional JavaScript -->
+									<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+									<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+									<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+									<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
