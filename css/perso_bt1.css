@@ -3,69 +3,118 @@
 @font-face {
     font-family: 'din_condensedbold';
     src: url('font/din_condensed_bold-webfont.woff2') format('woff2'),
-         url('font/din_condensed_bold-webfont.woff') format('woff');
+        url('font/din_condensed_bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 /* body {font-family: 'Barlow Condensed', sans-serif;} */
+body {
+    font-family: 'din_condensedbold', sans-serif;
+}
 
-body {font-family: 'din_condensedbold', sans-serif;}
-h1,h2,h3,h4,h5,h6 {font-family: 'din_condensedbold', sans-serif;}
-h5.text-white {width:50%;margin:auto;}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'din_condensedbold', sans-serif;
+}
+
+h5.text-white {
+    width: 50%;
+    margin: auto;
+}
 
 .bg-black {
-	background-color: #000 !important;
+    background-color: #000 !important;
 }
 
 .nav-principal {
-	font-size: 1.5em;
-	letter-spacing: 2px;
+    font-size: 1.5em;
+    letter-spacing: 2px;
 }
 
 .nav-principal:hover {
-	letter-spacing: 27px;
+    letter-spacing: 27px;
 }
 
 .imd {
-	font-size: 1.5em;
-	letter-spacing: 13.3px;
+    font-size: 1.5em;
+    letter-spacing: 13.3px;
 }
 
 .video {
-	font-size: 1.5em;
-	letter-spacing: 122px;
+    font-size: 1.5em;
+    letter-spacing: 122px;
 }
 
 .aboutme {
-	font-size: 1.5em;
-	letter-spacing: 65.2px;
-}
-.photo{
-	font-size: 1.5em;
-	letter-spacing: 121px;
+    font-size: 1.5em;
+    letter-spacing: 65.2px;
 }
 
-.eventmedia{
-	font-size: 1.5em;
-	letter-spacing: 42.7px;
+.photo {
+    font-size: 1.5em;
+    letter-spacing: 121px;
 }
+
+.eventmedia {
+    font-size: 1.5em;
+    letter-spacing: 42.7px;
+}
+
 .other {
-	font-size: 1.5em;
-	letter-spacing: 121px;
+    font-size: 1.5em;
+    letter-spacing: 121px;
 }
-
 
 .footer {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: red;
-   color: white;
-   text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
 }
+
 .card-body {
-	padding: 0 !important;
+    padding: 0 !important;
+
+    .containergal {
+        position: relative;
+        width: 100%;
+    }
+
+    .image {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+
+    .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .containergal:hover .image {
+        opacity: 0.3;
+    }
+
+    .containergal:hover .middle {
+        opacity: 1;
+    }
+
+    .text {
+        background-color: #000;
+        color: white;
+        font-size: 16px;
+        padding: 16px 32px;
+    }
 }
