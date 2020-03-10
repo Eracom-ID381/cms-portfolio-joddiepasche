@@ -39,6 +39,9 @@ h1.title a {
     color: #FFF
 }
 
+/*a:hover {
+    text-decoration: underline overline;
+}*/
 .imd {
     font-size: 1.5em;
     letter-spacing: 13.3px;
